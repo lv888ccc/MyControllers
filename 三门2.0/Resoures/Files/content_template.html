@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <script src="http://121.199.251.115/lazyload/jquery.js" type="text/javascript"></script>
+        <script src="http://121.199.251.115/lazyload/jquery.lazyload.js" type="text/javascript"></script>
+        <script src="http://121.199.251.115/lazyload/init.js" type="text/javascript"></script>
+        <style>
+            body {
+                font-family: arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(239,239,239);
+                word-wrap: break-word;
+            }
+        
+        #title_section {
+            padding-top: 10px;
+            padding-left:13px;
+            padding-right:13px;
+        }
+        
+        #title {
+            color: #333;
+            text-align: left;
+            font-size: 21px;
+            padding: 8px 0px;
+        }
+        
+        #subtitle {
+            color: #8e8e8e;
+            font-size: 12px;
+            padding-top: 0px;
+            position:relative;
+			padding:8px 0px;
+			line-height:20px;
+        }
+        
+        .newsSource {
+            position:absolute;
+            right:0px;
+            top:8px;
+        }
+        
+        #body_section {
+            padding: 10px 13px;
+            color: #333;
+            line-height: 140%;
+            overflow-x: hidden
+        }
+
+        #body_section.font_largex {
+            font-size: 22px;
+        }
+        
+        #body_section.font_large {
+            font-size: 19px;
+        }
+        
+        #body_section.font_small {
+            font-size: 16px;
+        }
+        
+        #body_section img {
+            max-width: 98% !important;
+            height: auto !important;
+            padding: 1px;
+            text-align: center
+        }
+        </style>
+    </head>
+    <body>
+        <div id="title_section">
+            <div id="title">{Title}</div>
+            <div id="subtitle">
+                <span>{PublishDate}</span>
+                <span class="newsSource">{NewsSource}</span>
+                
+            </div>
+        </div>
+        <div id="body_section" class="{className}">
+            <div id="content">
+                {Content}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </body>
+</html>
